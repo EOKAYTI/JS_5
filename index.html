@@ -36,7 +36,7 @@
                             3</button>
                     </li>
                     <li class="nav-item mt-2" role="presentation">
-                        <button class="shadow py-3 px-5 nav-link" id="bai_4" data-bs-toggle="tab"
+                        <button class="shadow py-3 px-5 nav-link" id="final-tab" data-bs-toggle="tab"
                             data-bs-target="#bai_4" type="button" role="tab" aria-controls="final-tab"
                             aria-selected="false">Bài
                             4</button>
@@ -46,7 +46,7 @@
             <div class="col-10">
                 <div class="tab-content" id="myTabContent">
                     <!-- Bài 1: Quản Lý Tuyển Sinh -->
-                    <div class="tab-pane fade show active" id="bai_1" role="tabpanel" aria-labelledby="home-tab"
+                    <div class="tab-pane fade show" id="bai_1" role="tabpanel" aria-labelledby="home-tab"
                         tabindex="0">
                         <div class="row">
                             <div class="col-12">
@@ -200,6 +200,54 @@
                         </div>
 
                     </div>
+                    <!-- Bài 4: Tính Tiền Cáp -->
+                    <div class="tab-pane fade show active" id="bai_4" role="tabpanel" aria-labelledby="final-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1>💰 Tính tiền cáp</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>💡Gợi ý:</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Mở rộng để xem thêm <br>
+                                    Sử dụng event onchange của dropdown để xử lý ẩn hiện cho ô nhập số kết nối khi chọn loại khách hàng: Onchange
+                                    Đối với loại khách hàng Doanh Nghiệp, tổng 10 kết nối đầu là 75$
+                                    => đây là giá trọn gói, nếu doanh nghiệp lắp đặt số kết nối nhỏ hơn 10 thì vẫn phải đóng 75$.
+                                    Vd: 6 kết nối thì vẫn sẽ cộng 75$ vào tổng tiền.
+                                    => Nếu lắp trên 10 kết nối thì kết nối thứ 11 trở đi sẽ tính 5$/kết nối.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Xử lý -->
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="mb-3">
+                                    <select
+                                        class="form-select form-select-lg"
+                                        name=""
+                                        id="loaiKH"
+                                    >
+                                        <option selected>Chọn loại khách hàng</option>
+                                        <option value="nhaDan">Nhà Dân</option>
+                                        <option value="doanhNghiep">Doanh nghiệp</option>
+                                    </select>
+                                </div>
+                                <input type="text" name="" id="maKH" placeholder="Nhập mã khách hàng">
+                                <input type="number" name="" id="soKenhCaoCap" placeholder="Số kênh cao cấp">
+                            </div>
+
+                            <button class="btn btn-primary mt-3" id="tinhTienCap">Tính tiền cáp</button>
+                            <p id="KQ4"></p>
+                        </div>
+
+                    </div>
+                    
 
                 </div>
             </div>
