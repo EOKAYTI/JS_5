@@ -121,3 +121,4 @@ document.getElementById("tinhTienThue").onclick = function(){
     document.getElementById("KQ3").innerHTML = `<p>Tiền thuế: ${tienThue.toLocaleString("vi-VN")}<p/>`
 
 }
+
